@@ -113,3 +113,133 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* Універсальний селектор */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Селектор тегу */
+h2 {
+    font-family: 'Verdana', sans-serif;
+    font-size: 24px;
+    color: #e74c3c;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Селектор класу */
+section {
+    background-color: #f9f9f9;
+    border: 2px solid #3498db;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Селектор ідентифікатора */
+#name {
+    border: 2px solid #3498db;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+#name:focus {
+    border-color: #333;
+}
+
+/* Селектор атрибута */
+input[type="email"] {
+    border: 2px solid #3498db;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+input[type="email"]:focus {
+    border-color: #20c212;
+}
+
+/* Сусідній селектор */
+h2 + p {
+    font-size: 18px;
+    color: #7f8c8d;
+}
+
+/* Дочірній селектор */
+section ul > li {
+    font-size: 18px;
+    color: #2980b9;
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+section ol > li {
+    font-size: 18px;
+    color: #2980b9;
+    margin-left: 20px;
+}
+
+/* Оформлення таблиці */
+section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+section th, td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+section th {
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+}
+
+section tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Шрифти, контури, фон та колір тексту */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #ecf0f1;
+}
+
+h2, h3 {
+    font-family: 'Georgia', serif;
+    color: #34495e;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    color: #7f8c8d;
+    line-height: 1.8;
+    margin: 15px 0;
+}
+
+form input, form select, form button {
+    font-family: 'Courier New', monospace;
+}
+
+form button {
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Стилі для списків */
+ul {
+    margin-left: 40px;
+}
+
+ol {
+    margin-left: 40px;
+}
+
