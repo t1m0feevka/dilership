@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Онлайн-Автосалон</title>
-    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -14,40 +14,58 @@
     </header>
 
     <main>
+        <button id="menu-toggle">&#9776; Меню</button>
+
+<nav id="slide-menu">
+    <span class="close-menu" id="close-menu">&times;</span>
+    <ul>
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="#">Моделі</a></li>
+        <li><a href="#">Сервіс</a></li>
+        <li><a href="reviews.html">Відгуки</a></li>
+    </ul>
+</nav>
+
         <section>
             <h2>Ласкаво просимо до нашого онлайн-автосалону!</h2>
             <p>У нашому автосалоні ви можете знайти автомобілі на будь-який смак і бюджет. Перегляньте каталог, оберіть авто та оформіть покупку онлайн!</p>
         </section>
 
-        <section>
-            <h2>Популярні автомобілі</h2>
-            <table>
-                <tr>
-                    <th>Марка</th>
-                    <th>Модель</th>
-                    <th>Рік</th>
-                    <th>Ціна</th>
-                </tr>
-                <tr>
-                    <td>BMW</td>
-                    <td>X5</td>
-                    <td>2022</td>
-                    <td>$55,000</td>
-                </tr>
-                <tr>
-                    <td>Audi</td>
-                    <td>A6</td>
-                    <td>2021</td>
-                    <td>$45,000</td>
-                </tr>
-                <tr>
-                    <td>Mercedes</td>
-                    <td>GLA</td>
-                    <td>2023</td>
-                    <td>$60,000</td>
-                </tr>
-            </table>
+        <section class="banner-carousel">
+            <div class="slides">
+                <div class="slide">
+                    <img src="images/bmwx5.jpg" alt="BMW X5">
+                    <h6>BMW X5</h6>
+                    <p>Рік: 2022 | Ціна: $55,000</p>
+                    <button class="details-button" onclick="showDetails('bmw-x5')">Детальний опис</button>
+                </div>
+                <div class="slide">
+                    <img src="images/a6.jpg" alt="Audi A6">
+                    <h6>Audi A6</h6>
+                    <p>Рік: 2021 | Ціна: $45,000</p>
+                    <button class="details-button" onclick="showDetails('audi-a6')">Детальний опис</button>
+                </div>
+                <div class="slide">
+                    <img src="images/gla.jpg" alt="Mercedes GLA">
+                    <h6>Mercedes GLA</h6>
+                    <p>Рік: 2023 | Ціна: $60,000</p>
+                    <button class="details-button" onclick="showDetails('mercedes-gla')">Детальний опис</button>
+                </div>
+            </div>
+            <div class="indicators">
+                <span class="dot" onclick="goToSlide(0)"></span>
+                <span class="dot" onclick="goToSlide(1)"></span>
+                <span class="dot" onclick="goToSlide(2)"></span>
+            </div>
         </section>
+        
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h3 id="modal-title"></h3>
+                <p id="modal-description"></p>
+            </div>
+        </div>
 
         <section>
             <h2>Чому варто вибрати нас?</h2>
@@ -89,5 +107,6 @@
     <footer>
         <p>&copy; 2024 Онлайн-Автосалон | <a href="description.html">Опис галузі</a></p>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>

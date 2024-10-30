@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Відгуки клієнтів</title>
+    <link rel="stylesheet" href="reviews.css">
+</head>
+<body>
+    <header>
+        <img src="./images/logo.png" alt="Логотип" class="logo" />
+    </header>
+
+    <button id="menu-toggle">&#9776; Меню</button>
+
+    <main>
+
+        <nav id="slide-menu">
+            <span class="close-menu" id="close-menu">&times;</span>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="#">Моделі</a></li>
+                <li><a href="#">Сервіс</a></li>
+                <li><a href="reviews.html">Відгуки</a></li>
+            </ul>
+        </nav>
+
+        <h2>Залишай свій коментар!</h2>
+
+        <section class="feedback-section">
+            <div class="reviews">
+                <h3>Відгуки клієнтів</h3>
+                <table>
+                    <tr>
+                        <th>Ім'я</th>
+                        <th>Коментар</th>
+                        <th>Оцінка</th>
+                    </tr>
+                    <tr>
+                        <td>Олександр</td>
+                        <td>Дуже задоволений покупкою! Автомобіль був доставлений вчасно, а обслуговування на високому рівні. Дякую за професіоналізм!</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td>Юля</td>
+                        <td>Замовляла авто в кредит, все пройшло гладко та без проблем. Консультанти відповіли на всі запитання і допомогли з оформленням документів.</td>
+                        <td>⭐⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td>Марія</td>
+                        <td>Гарний вибір автомобілів, і менеджери дуже допомогли з вибором.</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td>Максим</td>
+                        <td>Чудовий сервіс, швидка доставка. Машина у відмінному стані, все як обіцяли. Однозначно рекомендую!</td>
+                        <td>⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td>Ігор</td>
+                        <td>Дуже задоволений покупкою! Все було просто та швидко.</td>
+                        <td>⭐⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td>Світлана</td>
+                        <td>Купила тут свою першу машину. Дуже приємний персонал і якісне обслуговування. Машина працює чудово!</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td>Святослав</td>
+                        <td>Чудовий вибір авто та грамотні консультанти. Допомогли швидко підібрати варіант, який підходить під мій бюджет. Дякую!</td>
+                        <td>⭐⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td>Ірина</td>
+                        <td>Після покупки авто виникли деякі питання з документами, але підтримка швидко вирішила проблему. Хороший сервіс.</td>
+                        <td>⭐⭐⭐⭐</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="feedback-form">
+                <h3>Залишити новий відгук</h3>
+                <form action="#" method="post">
+                    <label for="name">Ваше ім'я:</label>
+                    <input type="text" id="name" name="name" required />
+
+                    <label for="comment">Ваш коментар:</label>
+                    <textarea id="comment" name="comment" required></textarea>
+
+                    <label for="rating">Оцінка:</label>
+                    <select id="rating" name="rating" class="rating-select">
+                    <option value="5">⭐⭐⭐⭐⭐</option>
+                    <option value="4">⭐⭐⭐⭐</option>
+                    <option value="3">⭐⭐⭐</option>
+                    <option value="2">⭐⭐</option>
+                    <option value="1">⭐</option>
+                    </select>
+
+                    <button type="submit">Надіслати</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Онлайн-Автосалон | <a href="description.html">Опис галузі</a></p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
